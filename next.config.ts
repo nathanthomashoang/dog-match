@@ -4,11 +4,8 @@ const nextConfig: NextConfig = {
   images: {
     domains: ['frontend-take-home.fetch.com'],
   },
-  // output: 'export',
-  // basePath: '/your-repo-name',
-  // trailingSlash: true,
 
-  //TODO: REMOVE THIS WHEN DEPLOYING
+  //NOTE: I have this here to make it easier to authenticate and it should not impact deployment or usage for this proof of concept
   async rewrites() {
     return [
       {

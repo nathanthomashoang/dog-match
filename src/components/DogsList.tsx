@@ -166,6 +166,12 @@ const DogsList = ({
             >
               Filter
             </button>
+            {selectedBreeds.length > 0 ?
+              <div className="flex justify-center">
+                <p>{`${selectedBreeds.length} Filters Selected`}</p>
+              </div>
+              : <p>&nbsp;</p>
+            }
           </div>
 
           {dogBreedData?.map((breed, idx) => (
@@ -197,6 +203,12 @@ const DogsList = ({
                 value="Match Me!"
               />
             )}
+            {selectedDogs.length > 0 ?
+              <div className="flex justify-center">
+                <p>{`${selectedDogs.length} Canine(s) Selected`}</p>
+              </div>
+              : <p>&nbsp;</p>
+            }
 
             <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 justify-center">
               {data.length > 0 && data.map(({ id, name, age, breed, img, zip_code }) => (

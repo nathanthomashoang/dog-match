@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Fetch FE Assessment - Nate Hoang",
-  description: "Nathan Hoang",
+  title: "Dog Matcher",
+  description: "By NTH",
 };
 
 export default function RootLayout({
